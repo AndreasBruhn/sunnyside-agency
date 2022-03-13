@@ -1,0 +1,121 @@
+/* Overwriting bootstrap  */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ height: 100%;
+ width: 100%;
+ font-size: 18px;
+ font-family: 'Barlow', sans-serif;
+}
+
+.heading {
+ font-family: 'Fraunces', sans-serif;
+}
+
+.heading-barlow {
+ font-family: 'Barlow', sans-serif;
+}
+
+/* ## Colors */
+
+/* ### Primary */
+
+.soft-red {
+ color: hsl(7, 99%, 70%)
+}
+.yellow {
+ color: hsl(51, 100%, 49%)
+}
+/* (graphic design text) */
+.dark-desaturated-cyan {
+ color: hsl(167, 40%, 24%)
+}
+.bg-dark-desaturated-cyan {
+ background-color: hsl(167, 40%, 24%)
+}
+/* (photography text) */
+.dark-blue {
+ color: hsl(198, 62%, 26%)
+}
+/* (footer) */
+.dark-moderate-cyan{
+ color: hsl(168, 34%, 41%)
+}
+.bg-dark-moderate-cyan{
+ background-color: hsl(168, 34%, 41%)
+}
+
+
+/* ### Neutral */
+
+.very-dark-desaturated-blue {
+ color: hsl(212, 27%, 19%);
+}
+.very-dark-grayish-blue {
+ color: hsl(213, 9%, 39%);
+}
+.dark-grayish-blue {
+ color: hsl(232, 10%, 55%);
+}
+.grayish-blue {
+ color: hsl(210, 4%, 67%);
+}
+.white {
+ color: hsl(0, 0%, 100%);
+}
+
+/* ### font weights */
+.fw-600 {
+ font-weight: 600;
+}
+.fw-900 {
+ font-weight: 900;
+}
+
+.py-7 {
+ padding-block: 4rem;
+}
+.pt-7 {
+ padding-top: 4rem;
+}
+.pb-6 {
+ padding-bottom: 3rem;
+}
+
+
+.navbar {
+ background: none;
+}
+
+.navbar-inner {
+ background:transparent;
+}
+
+.navbar-light .navbar-toggler {
+ border: none;
+ color: transparent;
+}
+
+.navbar-toggler:focus {
+ box-shadow: none;
+}
+
+/* Global styling */
+.image-header {
+ max-width: 100%;
+ top: 0;
+}
+
+.profile-circle {
+ width: 50px;
+ height: 50px;
+ margin: 0 auto;
+ overflow: hidden;
+ border-radius: 100px;
+}
