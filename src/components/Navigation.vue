@@ -1,52 +1,137 @@
 <template>
-  <div class="">
-    <nav class="navbar navbar-expand-lg navbar-light ">
-  <div class="container-fluid d-flex justify-content-between">
-    <div class=""><a class="navbar-brand" href="#">Navbar</a></div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <div :class="['fixed-top scroll-transition', { 'bg-dark' : scrolled}]">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container position-relative">
+        <div class="">
+          <a class="navbar-brand" href="#"
+            ><img src="../assets/img/logo.svg" alt=""
+          /></a>
+        </div>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse mobileNav"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="
+              navbar-nav
+              d-flex
+              flex-column
+              flex-sm-row
+              align-items-center
+              ms-auto
+              mb-2 mb-lg-0
+            "
+          >
+            <li class="nav-item py-2">
+              <a class="nav-link grayish-blue" aria-current="page" href="#"
+                >About</a
+              >
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link grayish-blue px-sm-3" href="#">Services</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link grayish-blue px-sm-3" href="#">Projects</a>
+            </li>
+            <li class="nav-item py-2 px-sm-3">
+              <button class="contact-btn rounded-pill border-0">
+                <a class="nav-link text-dark heading text-uppercase px-sm-3" href="#"
+                  >Contact</a
+                >
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
 </template>
 
 <script>
 export default {
   name: "Navigation",
+
+  data() {
+    return {
+      scrolled: false
+    }
+  },
+
+ mounted() {
+   window.addEventListener("scroll", () => {
+     this.scrolled = window.pageYOffset > 100;
+   })
+ }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
+<style>
+@import "../assets/css/main.css";
+
+.navbar-dark .navbar-nav a:nth-child(-n+3) {
+  color: #fff !important;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.navbar-dark .navbar-nav button .nav-link:last-child {
+  color: #000 !important;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+.scroll-transition {
+  transition: background-color .5s ease-in-out;
 }
-a {
-  color: #42b983;
+
+.fw-700 {
+  font-weight: 700;
 }
+.fw-900 {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-dark .navbar-nav a:nth-child(-n+3) {
+  color: hsl(210, 4%, 67%) !important;
+}
+
+  .contact-btn {
+  padding-block: 0.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: hsl(51, 100%, 49%);
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 225%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.mobileNav::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid white;
+  border-left: 25px solid transparent;
+}
+}
+
 </style>

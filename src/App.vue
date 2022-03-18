@@ -1,8 +1,8 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper overflow-hidden">
     <Navigation />
-    <div class="row g-0">
-      <div class="image-header col p-0">
+    <div class="row g-0 position-relative heading text-uppercase text-white">
+      <div class="col p-0">
         <img
           class="img-fluid d-md-none"
           src="./assets/img/mobile/image-header.jpg"
@@ -13,30 +13,31 @@
           src="./assets/img/desktop/image-header.jpg"
           alt=""
         />
+      <h1 class="position-absolute hero-title"> We are creatives</h1>
       </div>
     </div>
     <div class="row g-0">
-      <div class="image-header col-md-6 p-0">
+      <div class="col-md-6 p-0 order-md-1">
         <img
-          class="img-fluid d-md-none"
+          class="d-md-none"
           src="./assets/img/mobile/image-transform.jpg"
           alt=""
         />
           <img
-          class="img-fluid d-none d-md-block"
+          class="w-100 d-none d-md-block"
           src="./assets/img/desktop/image-transform.jpg"
           alt=""
         />
       </div>
-      <div class="col-md-6 py-4 d-md-flex align-items-md-center">
-        <div class="d-flex flex-column align-items-center">
-          <h2 class="heading">Transform your brand</h2>
-          <p class="p-2 text-center">
+      <div class="col-md-6 d-md-flex align-items-md-center">
+        <div class="d-flex flex-column align-items-center align-items-sm-start p-5">
+          <h2 class="heading text-md-start fw-900">Transform your brand</h2>
+          <p class="text-center text-md-start py-4 grayish-blue">
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <a href="#">Learn More</a>
+          <a href="#" class="heading text-decoration-none text-uppercase text-dark">Learn More</a>
         </div>
       </div>
     </div>
@@ -48,20 +49,20 @@
           alt=""
         />
         <img
-          class="img-fluid d-none d-md-block"
+          class="img-fluid w-100 d-none d-md-block"
           src="./assets/img/desktop/image-stand-out.jpg"
           alt=""
         />
       </div>
-      <div class="col-md-6 py-4 d-md-flex align-items-md-center">
-        <div class="d-flex flex-column align-items-center">
-          <h2 class="heading">Stand out to the right audience</h2>
-          <p class="p-2 text-center">
+      <div class="col-md-6 d-md-flex align-items-md-center">
+        <div class="d-flex flex-column align-items-center align-items-sm-start p-5">
+          <h2 class="heading  text-md-start fw-900">Stand out to the right audience</h2>
+          <p class="text-center text-md-start py-4 grayish-blue">
             Using a collaborative formula of designers, researchers,
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
-          <a href="#">Learn More</a>
+          <a href="#" class="text-decoration-none">Learn More</a>
         </div>
       </div>
     </div>
@@ -142,7 +143,7 @@
             <span class="grayish-blue">Marketing Director</span>
           </div>
         </div>
-        <div class="col-md-4 d-flex flex-column justify-content-center">
+        <div class="col-md-4 d-flex flex-column justify-content-center pt-4">
           <div class="profile-circle">
             <img class="img-fluid" src="./assets/img/image-thomas.jpg" alt="" />
           </div>
@@ -155,7 +156,7 @@
             <span class="grayish-blue heading-barlow">Chief Operating Officer</span>
           </div>
         </div>
-        <div class="col-md-4 d-flex flex-column justify-content-center">
+        <div class="col-md-4 d-flex flex-column justify-content-center pt-4">
           <div class="profile-circle">
             <img class="img-fluid" src="./assets/img/image-jennie.jpg" alt="" />
           </div>
@@ -184,24 +185,24 @@
         <img class="img-fluid" src="./assets/img/mobile/image-gallery-sugar-cubes.jpg" alt="" />
       </div>
     </div>
-    <footer class="py-4 bg-dark-moderate-cyan">
+    <footer class="py-4 bg-dark-moderate-cyan d-flex align-items-center flex-column">
       <h1 class="text-center text-decoration-none pt-4 pb-2 fw-900 dark-desaturated-cyan">sunnyside</h1>
-      <ul class="d-flex list-unstyled justify-content-around p-3 dark-desaturated-cyan">
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
+      <ul class="d-flex list-unstyled dark-desaturated-cyan">
+        <li class="px-2">About</li>
+        <li class="px-2">Services</li>
+        <li class="px-2">Projects</li>
       </ul>
-      <div class="d-flex justify-content-center p-4">
-        <div class="col-2 p-0">
+      <div class="d-flex justify-content-center">
+        <div class="col-4 mx-1 p-0">
         <img class="img-fluid mx-auto" src="./assets/img/icon-facebook.svg" alt="" />
       </div>
-        <div class="col-2 p-0">
+        <div class="col-4 mx-1 p-0">
         <img class="img-fluid" src="./assets/img/icon-instagram.svg" alt="" />
       </div>
-        <div class="col-2 p-0">
+        <div class="col-4 mx-1  p-0">
         <img class="img-fluid " src="./assets/img/icon-twitter.svg" alt="" />
       </div>
-        <div class="col-2 p-0">
+        <div class="col-4 mx-1 p-0">
         <img class="mx-auto" src="./assets/img/icon-pinterest.svg" alt="" />
       </div>
       </div>

@@ -14,6 +14,11 @@ body {
  font-family: 'Barlow', sans-serif;
 }
 
+img {
+ object-fit: cover;
+ max-width: 100%;
+}
+
 .heading {
  font-family: 'Fraunces', sans-serif;
 }
@@ -30,6 +35,9 @@ body {
  color: hsl(7, 99%, 70%)
 }
 .yellow {
+ color: hsl(51, 100%, 49%)
+}
+.bg-yellow {
  color: hsl(51, 100%, 49%)
 }
 /* (graphic design text) */
@@ -71,8 +79,8 @@ body {
 }
 
 /* ### font weights */
-.fw-600 {
- font-weight: 600;
+.fw-700 {
+ font-weight: 700;
 }
 .fw-900 {
  font-weight: 900;
@@ -107,10 +115,10 @@ body {
 }
 
 /* Global styling */
-.image-header {
+/* .image-header {
  max-width: 100%;
  top: 0;
-}
+} */
 
 .profile-circle {
  width: 50px;
@@ -118,4 +126,12 @@ body {
  margin: 0 auto;
  overflow: hidden;
  border-radius: 100px;
+}
+
+.hero-title {
+ margin-left: auto;
+ margin-right: auto;
+ top: 25%;
+ left: 35%;
+ right: 0;
 }
