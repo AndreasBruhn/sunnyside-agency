@@ -129,9 +129,64 @@ img {
 }
 
 .hero-title {
- margin-left: auto;
+ top: 25%;
+ /* margin-left: auto;
  margin-right: auto;
  top: 25%;
  left: 35%;
+ right: 0; */
+}
+
+.ionicon {
+ width: 100px;
+ height: 100px;
+}
+
+
+.underline-yellow:before {
+ content: "";
+ background-color: rgba(250, 212, 0, .3);
+ height: 0.8rem;
+ width: 110%;
+ display: block;
+ position: absolute;
+ left: -5%;
  right: 0;
+ bottom: 5%;
+ z-index: -1;
+ border-radius: 10px;
+}
+
+.underline-yellow:hover:before {
+ background-color: rgba(250, 212, 0, 1);
+}
+
+.underline-red:before {
+ content: "";
+ background-color: rgba(254, 120, 103, 0.3);
+ height: 0.8rem;
+ width: 110%;
+ display: block;
+ position: absolute;
+ left: -5%;
+ right: 0;
+ bottom: 5%;
+ z-index: -1;
+ border-radius: 10px;
+}
+
+.underline-red:hover:before {
+ background-color: rgba(254, 120, 103, 1);
+}
+
+.hover-light:hover {
+ background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hover-white:hover {
+ color: #fff !important;
+}
+
+svg:hover{
+ fill: #fff !important;
 }

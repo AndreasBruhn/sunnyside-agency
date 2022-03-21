@@ -1,5 +1,5 @@
 <template>
-  <div :class="['fixed-top scroll-transition', { 'bg-dark' : scrolled}]">
+  <div :class="['fixed-top scroll-transition', { 'bg-dark': scrolled }]">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container position-relative">
         <div class="">
@@ -22,17 +22,19 @@
           class="collapse navbar-collapse mobileNav"
           id="navbarSupportedContent"
         >
+
+
           <ul
             class="
               navbar-nav
               d-flex
-              flex-column
-              flex-sm-row
+              flex-column flex-sm-row
               align-items-center
               ms-auto
               mb-2 mb-lg-0
             "
           >
+
             <li class="nav-item py-2">
               <a class="nav-link grayish-blue" aria-current="page" href="#"
                 >About</a
@@ -45,8 +47,10 @@
               <a class="nav-link grayish-blue px-sm-3" href="#">Projects</a>
             </li>
             <li class="nav-item py-2 px-sm-3">
-              <button class="contact-btn rounded-pill border-0">
-                <a class="nav-link text-dark heading text-uppercase px-sm-3" href="#"
+              <button class="contact-btn rounded-pill border-0 hover-light">
+                <a
+                  class="nav-link text-dark heading text-uppercase px-sm-3"
+                  href="#"
                   >Contact</a
                 >
               </button>
@@ -64,15 +68,15 @@ export default {
 
   data() {
     return {
-      scrolled: false
-    }
+      scrolled: false,
+    };
   },
 
- mounted() {
-   window.addEventListener("scroll", () => {
-     this.scrolled = window.pageYOffset > 100;
-   })
- }
+  mounted() {
+    window.addEventListener("scroll", () => {
+      this.scrolled = window.pageYOffset > 100;
+    });
+  },
 };
 </script>
 
@@ -80,7 +84,7 @@ export default {
 <style>
 @import "../assets/css/main.css";
 
-.navbar-dark .navbar-nav a:nth-child(-n+3) {
+.navbar-dark .navbar-nav a:nth-child(-n + 3) {
   color: #fff !important;
 }
 
@@ -89,7 +93,7 @@ export default {
 }
 
 .scroll-transition {
-  transition: background-color .5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .fw-700 {
@@ -100,38 +104,44 @@ export default {
 }
 
 @media screen and (max-width: 576px) {
-  .navbar-dark .navbar-nav a:nth-child(-n+3) {
-  color: hsl(210, 4%, 67%) !important;
-}
+  .navbar-dark .navbar-nav a:nth-child(-n + 3) {
+    color: hsl(210, 4%, 67%) !important;
+  }
 
   .contact-btn {
-  padding-block: 0.4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background-color: hsl(51, 100%, 49%);
-}
+    padding-block: 0.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: hsl(51, 100%, 49%);
+  }
 
-.navbar-collapse {
-  position: absolute;
-  top: 225%;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-}
+  .navbar-collapse {
+    position: absolute;
+    top: 225%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
 
-.mobileNav::before {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-bottom: 25px solid white;
-  border-left: 25px solid transparent;
-}
-}
+  .mobileNav::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid white;
+    border-left: 25px solid transparent;
+  }
 
+     #triangle-bottomright {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid red;
+      border-left: 100px solid transparent;
+    }
+}
 </style>
