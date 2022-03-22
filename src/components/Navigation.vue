@@ -28,7 +28,7 @@
             class="
               navbar-nav
               d-flex
-              flex-column flex-sm-row
+              flex-column flex-lg-row
               align-items-center
               ms-auto
               mb-2 mb-lg-0
@@ -96,14 +96,7 @@ export default {
   transition: background-color 0.5s ease-in-out;
 }
 
-.fw-700 {
-  font-weight: 700;
-}
-.fw-900 {
-  font-weight: 900;
-}
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 998px) {
   .navbar-dark .navbar-nav a:nth-child(-n + 3) {
     color: hsl(210, 4%, 67%) !important;
   }
@@ -136,12 +129,11 @@ export default {
     border-bottom: 25px solid white;
     border-left: 25px solid transparent;
   }
+}
 
-     #triangle-bottomright {
-      width: 0;
-      height: 0;
-      border-bottom: 100px solid red;
-      border-left: 100px solid transparent;
-    }
+@media screen and (min-width: 998px) {
+.navbar-dark .navbar-nav button a:nth-child(-n + 3):hover {
+  color: #fff !important;
+}
 }
 </style>

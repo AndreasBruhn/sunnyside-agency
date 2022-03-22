@@ -89,13 +89,6 @@ img {
 .py-7 {
  padding-block: 4rem;
 }
-.pt-7 {
- padding-top: 4rem;
-}
-.pb-6 {
- padding-bottom: 3rem;
-}
-
 
 .navbar {
  background: none;
@@ -114,12 +107,6 @@ img {
  box-shadow: none;
 }
 
-/* Global styling */
-/* .image-header {
- max-width: 100%;
- top: 0;
-} */
-
 .profile-circle {
  width: 50px;
  height: 50px;
@@ -130,11 +117,6 @@ img {
 
 .hero-title {
  top: 25%;
- /* margin-left: auto;
- margin-right: auto;
- top: 25%;
- left: 35%;
- right: 0; */
 }
 
 .ionicon {
@@ -187,6 +169,11 @@ img {
  color: #fff !important;
 }
 
-svg:hover{
+.icon{
+ width: 25px;
+ height: 25px;
+}
+
+.icon path:hover{
  fill: #fff !important;
 }
