@@ -227,28 +227,28 @@
     <div class="row h-100 g-0">
       <div class="col-6 col-md-3 p-0">
         <img
-          class="img-fluid"
+          class="img-fluid w-100"
           src="./assets/img/mobile/image-gallery-milkbottles.jpg"
           alt=""
         />
       </div>
       <div class="col-6 col-md-3 p-0">
         <img
-          class="img-fluid"
+          class="img-fluid w-100"
           src="./assets/img/mobile/image-gallery-orange.jpg"
           alt=""
         />
       </div>
       <div class="col-6 col-md-3 p-0">
         <img
-          class="img-fluid"
+          class="img-fluid w-100"
           src="./assets/img/mobile/image-gallery-cone.jpg"
           alt=""
         />
       </div>
       <div class="col-6 col-md-3 p-0">
         <img
-          class="img-fluid"
+          class="img-fluid w-100"
           src="./assets/img/mobile/image-gallery-sugar-cubes.jpg"
           alt=""
         />
