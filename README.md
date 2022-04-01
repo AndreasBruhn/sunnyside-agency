@@ -69,4 +69,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - My Personal Website - [Andreas Bruhn](https://www.andreasbc.dk/)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- LinkedIn - [@yourusername](https://www.twitter.com/yourusername)
+- LinkedIn - [@Andreas Bruhn Christensen](https://www.linkedin.com/in/andreas-bruhn-christensen-397270132/)
